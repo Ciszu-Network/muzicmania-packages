@@ -2,13 +2,13 @@ Package: muzic-mania
 Version: 2.4.2
 Architecture: amd64
 Maintainer: Ciszu Network <fplayersoffcial@gmail.com>
-Installed-Size: 14284
+Installed-Size: 14291
 Depends: libayatana-appindicator3-1, libwebkit2gtk-4.1-0, libgtk-3-0
 Filename: ./MuzicMania_2.4.2_amd64.deb
-Size: 11924812
-MD5sum: 74fffee89c4996a3a09decb96f12936e
-SHA1: 217cbc2f1522150dfae0655b1db214bcb869c55a
-SHA256: 1398b9ef44dc41fd34c1b58a108373b466406c2c0961676fd8b7c27442ea7e49
+Size: 11928102
+MD5sum: a3f551eeb3801298873e8a4b805c326e
+SHA1: a29fabafb34766b28223cdfe4b4ceb3b9f114ebd
+SHA256: 704710e5ed1379180a34abf7dedfdd9b91276f7271f07190f80b283adf0adb53
 Priority: optional
 Homepage: https://muzicmania.vercel.app
 Description: Ecosistema rítmico de alto rendimiento
