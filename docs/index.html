@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MuzicMania · Repositorios</title>
+<style>
+body{margin:0;background:#07080d;color:#f1f4ff;font:16px/1.6 system-ui,sans-serif;padding:48px 20px}
+main{max-width:860px;margin:auto}h1{font-size:2.4rem;margin:0 0 .2em}h1 span{color:#0f9eff}
+p{color:#9aa3b5}code,pre{background:#111522;border:1px solid #232838;border-radius:10px}
+code{padding:2px 6px}pre{padding:14px 16px;overflow:auto}pre code{padding:0;border:0;background:none}
+a{color:#0f9eff}.badge{display:inline-block;border:1px solid #0f9eff55;color:#0f9eff;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+</style>
+</head>
+<body><main>
+<span class="badge">MIT · Ciszu Network</span>
+<h1>MuzicMania <span>repositorios</span></h1>
+<p>Paquetes Linux firmados con la clave <code>muzicmania.asc</code>. Versión actual: <strong>Launcher 2.4.2 · Juego 2.1.1 (beta)</strong>.</p>
+<h2>Fedora / RHEL / openSUSE</h2>
+<pre><code>sudo curl -fsSL https://ciszu-network.github.io/muzicmania-packages/muzicmania.asc -o /etc/pki/rpm-gpg/RPM-GPG-KEY-muzicmania
+sudo curl -fsSL https://ciszu-network.github.io/muzicmania-packages/rpm/muzicmania.repo -o /etc/yum.repos.d/muzicmania.repo
+sudo dnf install muzic-mania</code></pre>
+<h2>Debian / Ubuntu / Mint</h2>
+<pre><code>sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://ciszu-network.github.io/muzicmania-packages/muzicmania.asc | sudo tee /etc/apt/keyrings/muzicmania.asc >/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/muzicmania.asc] https://ciszu-network.github.io/muzicmania-packages/deb ./" | sudo tee /etc/apt/sources.list.d/muzicmania.list
+sudo apt update &amp;&amp; sudo apt install muzic-mania</code></pre>
+<h2>Arch Linux</h2>
+<p>El PKGBUILD está en el repositorio principal, pendiente de publicación en AUR. Mientras tanto:</p>
+<pre><code>git clone https://github.com/Ciszu-Network/CiszuNetwork
+cd CiszuNetwork/projects/muzicmania/packaging/aur
+makepkg -si</code></pre>
+<h2>Comprobación</h2>
+<pre><code>rpm --checksig MuzicMania-2.4.2-1.x86_64.rpm
+gpg --verify repodata/repomd.xml.asc repodata/repomd.xml</code></pre>
+<p>Repositorio generado automáticamente. La música y assets de terceros conservan sus licencias.</p>
+</main></body></html>
